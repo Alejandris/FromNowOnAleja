@@ -79,10 +79,10 @@ header a:hover {
 
 .slider .list .item .content {
     position: absolute;
-    top: 40%;
+    top: 75%;
     width: 100%;
     max-width: 80%;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -97,8 +97,13 @@ header a:hover {
     line-height: 1.3em;
     transition: transform 0.3s ease;
 }
+.slider .list .item .content .typel{
+    font-size: 2em;
+    font-family: Poppins, sans-serif;
+    transition: transform 0.3s ease;
+}
 
-.slider .list .item .content .type {
+.slider .list .item .content .type, .slider .list .item .content .typel  {
     color: #ffacbc;
     transition: color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
@@ -123,6 +128,7 @@ header a:hover {
 
 .slider .list .item:nth-child(1) .content .title,
 .slider .list .item:nth-child(1) .content .type,
+.slider .list .item:nth-child(1) .content .typel,
 .slider .list .item:nth-child(1) .content .description,
 .slider .list .item:nth-child(1) .content .buttons {
     transform: translateY(50px);
@@ -135,7 +141,7 @@ header a:hover {
     animation-delay: 0.4s !important;
 }
 
-.slider .list .item:nth-child(1) .content .type {
+.slider .list .item:nth-child(1) .content .type, .slider .list .item:nth-child(1) .content .typel {
     animation-delay: 0.6s !important;
 }
 
@@ -192,6 +198,7 @@ header a:hover {
 
 .slider.prev .list .item:nth-child(2) .content .title,
 .slider.prev .list .item:nth-child(2) .content .type,
+.sidebar.prev .list .item:nth-child(2) .content .typel,
 .slider.prev .list .item:nth-child(2) .content .description,
 .slider.prev .list .item:nth-child(2) .content .buttons {
     animation: contentOut 1.5s linear 1 forwards !important;

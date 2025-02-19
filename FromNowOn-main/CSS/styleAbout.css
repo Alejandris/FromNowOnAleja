@@ -229,11 +229,11 @@ b {
   z-index: -1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 600px) and (max-width: 2500px){
   .group {
     width: 100%;
     padding-top: 20%;
-    padding-left: 0%;
+    padding-left: 10%;
   }
 
   .mision {
@@ -245,20 +245,23 @@ b {
     padding-left: 0%;
     padding-top: 10%;
   }
-
-  /* Barra lateral en dispositivos pequeños */
+  
+}
+@media screen and (max-width: 750px) {
   .sidebar {
-    top: 0;
-    left: 0; /* Asegura que la barra lateral se alinee al borde izquierdo */
-    transform: translateY(0); /* Ajuste para que no se mueva hacia arriba */
-    width: 100%; /* Asegura que ocupe el 100% del ancho */
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 0;
+    left: 0; 
+    right: auto; 
+    transform: translateY(-50%); 
+    width: 35px; 
+    padding: 10px 0; 
   }
+
 
   .sidebar a {
-    writing-mode: unset; /* Para que los enlaces se muestren horizontalmente */
-    font-size: 14px; /* Ajuste de tamaño para pantallas pequeñas */
+    font-size: 12px; 
+    padding: 8px; 
   }
 }
+
+
+
